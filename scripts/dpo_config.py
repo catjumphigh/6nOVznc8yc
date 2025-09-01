@@ -10,7 +10,7 @@ DPO_CONFIG = {
         "batch_size": 16,
     },
     "1_2_b": {
-        "lr": 1e-5,
+        "lr": 8e-6,
         "distributed": "ddp",
         "gpu_count": 1,
         "batch_size": 12,
@@ -23,21 +23,21 @@ DPO_CONFIG = {
         "use_lora": True
     },
     "4_5_b": {
-        "lr": 7e-6,
+        "lr": 1e-5,
         "distributed": "ddp",
         "gpu_count": 4,
         "batch_size": 12,
         "use_lora": True
     },
     "5_9_b": {
-        "lr": 7.5e-6,
+        "lr": 2e-5,
         "distributed": "ddp",
         "gpu_count": 4,
         "batch_size": 8,
         "use_lora": True
     },
     "9_12_b": {
-        "lr": 5e-6,
+        "lr": 1e-5,
         "distributed": "ds",
         "gpu_count": 4,
         "use_lora": True,
@@ -45,7 +45,7 @@ DPO_CONFIG = {
         "gradient_checkpointing": False
     },
     "12_14_b": {
-        "lr": 8.5e-6,
+        "lr": 1e-5,
         "distributed": "ds",
         "gpu_count": 4,
         "use_lora": True,
