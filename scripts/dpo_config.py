@@ -4,13 +4,13 @@ from copy import deepcopy
 
 DPO_CONFIG = {
     "0_1_b": {
-        "lr": 2e-5,
+        "lr": 1e-5,
         "distributed": "ddp",
         "gpu_count": 1,
         "batch_size": 16,
     },
     "1_2_b": {
-        "lr": 8e-6,
+        "lr": 1e-5,
         "distributed": "ddp",
         "gpu_count": 1,
         "batch_size": 12,
@@ -37,7 +37,7 @@ DPO_CONFIG = {
         "use_lora": True
     },
     "9_12_b": {
-        "lr": 1e-5,
+        "lr": 1.5e-5,
         "distributed": "ds",
         "gpu_count": 4,
         "use_lora": True,
