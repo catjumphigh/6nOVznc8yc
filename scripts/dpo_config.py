@@ -1,7 +1,7 @@
 from model_utility import get_model_architecture, get_model_num_params, get_use_liger, disable_flash_attention, get_gradient_checkpointing, get_gpu_count
 from copy import deepcopy
 
-tuned_ratio = 1.0
+tuned_ratio = 1.1
 
 DPO_CONFIG = {
     "0_1_b": {

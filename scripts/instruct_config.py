@@ -2,7 +2,7 @@ from model_utility import get_model_architecture, get_model_num_params, get_use_
 from copy import deepcopy
 
 
-tuned_ratio = 1.0
+tuned_ratio = 1.1
 
 FIXED_BS_CONFIG = {
     "EleutherAI/gpt-neo-1.3B": {"batch_size": 36},
