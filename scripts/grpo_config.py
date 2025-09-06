@@ -2,6 +2,8 @@ from model_utility import get_model_architecture, get_model_num_params, get_use_
 from copy import deepcopy
 
 
+tuned_ratio = 1.0
+
 GRPO_CONFIG = {
     "0_1_b": {
         "lr": 0.0002,
@@ -98,6 +100,7 @@ GRPO_CONFIG = {
 
 for key in GRPO_CONFIG:
     GRPO_CONFIG[key]["label"] = key
+    GRPO_CONFIG[key]["lr"] = GRPO_CONFIG[key]["lr"] * tuned_ratio
 
 
 def if_contain_slow_reward_function(dataset_type: dict) -> bool:

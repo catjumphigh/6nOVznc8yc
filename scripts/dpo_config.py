@@ -1,6 +1,7 @@
 from model_utility import get_model_architecture, get_model_num_params, get_use_liger, disable_flash_attention, get_gradient_checkpointing, get_gpu_count
 from copy import deepcopy
 
+tuned_ratio = 1.0
 
 DPO_CONFIG = {
     "0_1_b": {
@@ -80,6 +81,7 @@ DPO_CONFIG = {
 
 for key in DPO_CONFIG:
     DPO_CONFIG[key]["label"] = key
+    DPO_CONFIG[key]["lr"] = DPO_CONFIG[key]["lr"] * tuned_ratio
     
 
 def get_config(param_nums: int) -> dict:
