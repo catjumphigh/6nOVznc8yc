@@ -2,7 +2,7 @@ from model_utility import get_model_architecture, get_model_num_params, get_use_
 from copy import deepcopy
 
 
-tuned_ratio = 1.2
+tuned_ratio = 0.9
 
 GRPO_CONFIG = {
     "0_1_b": {
